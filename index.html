@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col h1 text-white text-start text-center text-md-start text-lg-start">TO-DO APP</div>
+        </div>
+
+        <div class="row">
+            <div class="h6 text-white text-start text-center text-md-start text-lg-start">CREATE A TO-DO</div>
+        </div>
+
+        <form id="todo-form">
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="form-control" name="newTask" type="text" placeholder="eg. Do the laundry"> 
+                </div>     
+            </div>
+    
+            <div class="row">
+                <div class="h6 text-white text-start text-center text-md-start text-lg-start">CATEGORY</div>
+            </div>
+    
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="radio" class="btn-check" name="category" id="option1" value="Work" checked>
+                    <label class="col-12 btn btn-outline-danger p-4 text-white work-task" for="option1"">Work</label>
+                </div>
+                <div class="col-6">
+                    <input type="radio" class="btn-check" name="category" id="option2" value="Personal">
+                    <label class="col-12 btn btn-outline-primary p-4 text-white personal-task" for="option2">Personal</label>
+                </div>
+            </div>
+    
+            <div class="row mb-4">
+                <div class="col"><button type="submit" class="btn btn-secondary p-2 w-100 add-task" active>ADD TO-DO</button></div>
+            </div>
+        </form>
+
+        <div class="row mb-2">
+            <div class="h6 text-white text-start text-center text-md-start text-lg-start">TO-DO LIST</div>
+        </div>
+
+        <div class="todoList">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
